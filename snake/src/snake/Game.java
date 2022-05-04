@@ -165,8 +165,8 @@ public class Game extends JPanel implements KeyListener, ActionListener{
 			Random rand = new Random();
 			// if snake ate apple
 			if (new Rectangle(x[0], y[0], unitSize, unitSize).intersects(new Rectangle(appleX, appleY, unitSize, unitSize))) {
-				appleX = rand.nextInt(screenWidth-unitSize);
-				appleY = rand.nextInt(screenHeight-3*unitSize);
+				appleX = rand.nextInt(screenWidth-2*unitSize);
+				appleY = rand.nextInt(screenHeight-2*unitSize);
 				snakeUnits += 3;
 				score += 1;
 			}
